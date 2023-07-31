@@ -1,163 +1,193 @@
+/* CSS Reset */
+/* Add your CSS reset or normalize stylesheet here */
+
+/* Global Styles */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-  }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
 
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+/* Header Styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333333;
+}
 
-  .logo {
-    font-size: 32px;
-    font-weight: bold;
-    color: #333333;
-  }
+.nav {
+  list-style: none;
+  display: flex;
+}
 
-  .nav {
-    list-style: none;
-    display: flex;
-  }
+.nav li {
+  margin-left: 20px;
+}
 
-  .nav li {
-    margin-left: 20px;
-  }
+.nav a {
+  text-decoration: none;
+  color: #333333;
+}
 
-  .nav a {
-    text-decoration: none;
-    color: #333333;
-  }
+.nav a:hover {
+  color: #666666;
+}
 
-  .nav a:hover {
-    color: #666666;
-  }
+/* Main Content Styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-  .main {
-    margin-top: 40px;
-  }
+.main {
+  margin-top: 40px;
+}
 
-  .main h1 {
-    font-size: 48px;
-    color: #333333;
-    text-align: center;
-  }
+.main h1 {
+  font-size: 48px;
+  color: #333333;
+  text-align: center;
+}
 
-  .main p {
-    font-size: 18px;
-    color: #333333;
-    text-align: center;
-    margin-top: 20px;
-  }
+.main p {
+  font-size: 18px;
+  color: #333333;
+  text-align: center;
+  margin-top: 20px;
+}
 
-  .main img {
-    display: block;
-    margin: 0 auto;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
+.main img {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
-  .footer {
-    margin-top: 40px;
-    text-align: center;
-  }
+/* Footer Styles */
+.footer {
+  margin-top: 40px;
+  text-align: center;
+}
 
-  .footer p {
-    font-size: 14px;
-    color: #999999;
-  }
+.footer p {
+  font-size: 14px;
+  color: #999999;
+}
 
-  .content-box {
-    display: flex;
-    flex-direction: column; /* Set flex-direction to column to stack items vertically */
-    align-items: center;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
-  }
-  
-  .content-box img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  .content-box h2 {
-    font-size: 24px;
-    margin-bottom: 10px; /* Add spacing between the title and description */
-  }
-  
-  .content-box p {
-    margin: 0; /* Reset margin for the description text */
-    font-size: 16px;
-    text-align: center;
-  }
+/* Content Box Styles */
+.content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-  .flex-container {
-    display: flex;
-    align-items: center;
-  }
+.content-box img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
-  .text-container {
-    /* Add spacing between the image and text */
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .text-container h2 {
-    font-size: 24px;
-    margin-bottom: 10px; /* Add spacing between the title and description */
-    text-align: center; /* Center the <h2> element horizontally */
-  }
-  
-  .text-container p {
-    margin: 0; /* Reset margin for the description text */
-    font-size: 16px;
-    text-align: center;
-  }
-  
+.content-box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.content-box p {
+  margin: 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Flex Container Styles */
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Text Container Styles */
+.text-container {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.text-container p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Blog Posts Styles */
 .blog-posts {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center the blog posts horizontally */
+  justify-content: center;
   margin-top: 30px;
 }
 
 .blog-post {
-  flex: 0 0 300px; /* Fixed width of 300px for each blog post */
+  flex: 0 0 300px;
   margin: 10px;
   padding: 10px;
-  background-color: #ffffff; /* Set the background color to white */
-  border: 1px solid #e0e0e0; /* Add a border */
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .blog-post h3 {
   font-size: 20px;
-  margin-bottom: 8px;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  margin-bottom: 10px;
 }
 
 .blog-post p {
   font-size: 16px;
+}
+
+/* Read More Button Styles */
+.read-more-button {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #333333;
+  background-color: #f0f0f0;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.read-more-button:hover {
+  background-color: #e0e0e0;
 }
